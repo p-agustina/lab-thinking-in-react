@@ -2,8 +2,8 @@ import ProductRow from "./ProductRow";
 
 function ProductTable({products, query, stock}) {
     return ( 
-        <div className="TableCont" style={{ display: 'flex', justifyContent: 'center'}}>
-        <table>
+        <div className="TableCont">
+        <table className="Table">
             <thead>
                 <tr>
                     <th>Name</th>

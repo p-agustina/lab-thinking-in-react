@@ -12,10 +12,44 @@ code {
     monospace;
 }
 
-.TableCont table{
+.Table {
+  width: 90vw;
+}
+
+.TableCont table {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px;
+}
+
+thead tr {
+  background-color: gray;
+}
+
+tr {
+  width: 90vw;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+td {
+  margin: 5px 0px;
+}
+
+.MainPageContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
 }
+
+.SearchContainer {
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  text-align: center;
+}
+
+

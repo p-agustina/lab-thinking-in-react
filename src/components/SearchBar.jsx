@@ -9,9 +9,12 @@ function SearchBar({ setQuery, setInStock }) {
 
   return (
     <div className="SearchContainer">
+      <p>Search</p>
       <input type="text" onChange={handleSearch} />
-      <input type="checkbox" onChange={handleInStock} />
-      Show only products in stock
+      <p>
+        <input type="checkbox" onChange={handleInStock} /> Show only products in
+        stock
+      </p>
     </div>
   );
 }

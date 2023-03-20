@@ -5,19 +5,14 @@ import ProductTable from './ProductTable';
 
 function ProductsPage() {
   const [products, setProducts] = useState(jsonData);
-  const [query, setQuery] = useState("");
+  const [query, setQuery] = useState('');
   const [inStock, setInStock] = useState(false);
 
   return (
-    <div className='MainPageContainer'>
+    <div className="MainPageContainer">
       <h1>IronStore</h1>
       <SearchBar setQuery={setQuery} setInStock={setInStock} />
-      <ProductTable
-        products={products}
-        query={query}
-        stock={inStock}
-  
-      />
+      <div><ProductTable products={products} query={query} stock={inStock} /></div>
     </div>
   );
 }
